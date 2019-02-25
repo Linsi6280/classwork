@@ -1,0 +1,22 @@
+total_minutes = 76
+hours = total_minutes // 60
+minutes = total_minutes % 60
+print(f"{hours}h, {minutes}min")
+
+total_cent = 102
+dollars = total_cent // 100
+cents = total_cent % 100
+print(f"${dollars}, {cents}cents")
+
+id = 6
+g = 4
+group = int((id + 1) // g)
+print(f"id: {id}")
+print(f"You are in group #{group}.")
+
+
+number = 567
+first = number // 100
+second = number % 100 //10
+third = number % 10
+print(first + second + third)
