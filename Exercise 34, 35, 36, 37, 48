@@ -1,0 +1,59 @@
+#Exercise 34
+x = int(input())
+if x % 2 == 0:
+  print("The integer is even.")
+else:
+  print("The integer is odd.")
+
+
+#Exercise 35
+human_year = float(input())
+dog_year = " "
+if 0 <= human_year <= 2:
+  dog_year = human_year * 10.5
+elif human_year > 2:
+  dog_year = 10.5 * 2 + 4 * (human_year - 2)
+
+if dog_year == " ":
+  print("It's a error!")
+else:
+  print("The dog year is", dog_year)
+
+
+#Exercise 36
+letter = str(input())
+if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
+  print("It's a vowel.")
+elif letter == "y":
+  print("Sometimes y is a vowel, and sometimes y is a consonant.")
+else:
+  print("It's a consonant.")
+
+
+#Exercise 37
+nsides = int(input())
+name = " "
+if nsides == 3:
+  name = "triangle"
+elif nsides == 4:
+  name = "quadrilateral"
+elif nsides == 5:
+  name = "pentagon"
+elif nsides == 6:
+  name = "hexagon"
+elif nsides == 7:
+  name = "heptagon"
+elif nsides == 8:
+  name = "octagon"
+elif nsides == 9:
+  name = "nonagon"
+elif nsides == 10:
+  name = "decagon"
+
+if name == " ":
+  print("It's a error!")
+else:
+  print("This is a", name)
+
+
+#Exercise 48
