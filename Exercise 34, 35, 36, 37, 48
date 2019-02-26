@@ -1,59 +1,92 @@
-#Exercise 34
-x = int(input())
-if x % 2 == 0:
-  print("The integer is even.")
-else:
-  print("The integer is odd.")
 
-
-#Exercise 35
-human_year = float(input())
-dog_year = " "
-if 0 <= human_year <= 2:
-  dog_year = human_year * 10.5
-elif human_year > 2:
-  dog_year = 10.5 * 2 + 4 * (human_year - 2)
-
-if dog_year == " ":
-  print("It's a error!")
-else:
-  print("The dog year is", dog_year)
-
-
-#Exercise 36
-letter = str(input())
-if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
-  print("It's a vowel.")
-elif letter == "y":
-  print("Sometimes y is a vowel, and sometimes y is a consonant.")
-else:
-  print("It's a consonant.")
-
-
-#Exercise 37
-nsides = int(input())
-name = " "
-if nsides == 3:
-  name = "triangle"
-elif nsides == 4:
-  name = "quadrilateral"
-elif nsides == 5:
-  name = "pentagon"
-elif nsides == 6:
-  name = "hexagon"
-elif nsides == 7:
-  name = "heptagon"
-elif nsides == 8:
-  name = "octagon"
-elif nsides == 9:
-  name = "nonagon"
-elif nsides == 10:
-  name = "decagon"
-
-if name == " ":
-  print("It's a error!")
-else:
-  print("This is a", name)
-
-
-#Exercise 48
+#Exercise 34                                                                                    
+x = int(input("Please enter a number: "))                                                       
+if x % 2 == 0:                                                                                  
+  print("The integer is even.")                                                                 
+else:                                                                                           
+  print("The integer is odd.")                                                                  
+                                                                                                
+                                                                                                
+#Exercise 35                                                                                    
+human_year = float(input("Please enter the human year: "))                                      
+dog_year = " "                                                                                  
+if 0 <= human_year <= 2:                                                                        
+  dog_year = human_year * 10.5                                                                  
+elif human_year > 2:                                                                            
+  dog_year = 10.5 * 2 + 4 * (human_year - 2)                                                    
+                                                                                                
+if dog_year == " ":                                                                             
+  print("It's a error!")                                                                        
+else:                                                                                           
+  print("The dog year is", dog_year)                                                            
+                                                                                                
+                                                                                                
+#Exercise 36                                                                                    
+letter = str(input("Please enter a letter: "))                                                  
+if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":           
+  print("It's a vowel.")                                                                        
+elif letter == "y":                                                                             
+  print("Sometimes y is a vowel, and sometimes y is a consonant.")                              
+else:                                                                                           
+  print("It's a consonant.")                                                                    
+                                                                                                
+                                                                                                
+#Exercise 37                                                                                    
+nsides = int(input("Please enter the number of side: "))                                        
+name = " "                                                                                      
+if nsides == 3:                                                                                 
+  name = "triangle"                                                                             
+elif nsides == 4:                                                                               
+  name = "quadrilateral"                                                                        
+elif nsides == 5:                                                                               
+  name = "pentagon"                                                                             
+elif nsides == 6:                                                                               
+  name = "hexagon"                                                                              
+elif nsides == 7:                                                                               
+  name = "heptagon"                                                                             
+elif nsides == 8:                                                                               
+  name = "octagon"                                                                              
+elif nsides == 9:                                                                               
+  name = "nonagon"                                                                              
+elif nsides == 10:                                                                              
+  name = "decagon"                                                                              
+                                                                                                
+if name == " ":                                                                                 
+  print("It's a error!")                                                                        
+else:                                                                                           
+  print("This is a", name)                                                                      
+                                                                                                
+                                                                                                
+#Exercise 48                                                                                    
+year = int(input("Please enter a year: "))                                                      
+                                                                                                
+animal = " "                                                                                    
+if year % 12 == 0:                                                                              
+  animal = "monkey"                                                                             
+elif year % 12 == 1:                                                                            
+  animal = "rooster"                                                                            
+elif year % 12 == 2:                                                                            
+  animal = "dog"                                                                                
+elif year % 12 == 3:                                                                            
+  animal = "pig"                                                                                
+elif year % 12 == 4:                                                                            
+  animal = "rat"                                                                                
+elif year % 12 == 5:                                                                            
+  animal = "ox"                                                                                 
+elif year % 12 == 6:                                                                            
+  animal = "tiger"                                                                              
+elif year % 12 == 7:                                                                            
+  animal = "hare"                                                                               
+elif year % 12 == 8:                                                                            
+  animal = "dragon"                                                                             
+elif year % 12 == 9:                                                                            
+  animal = "snake"                                                                              
+elif year % 12 == 10:                                                                           
+  animal = "horse"                                                                              
+elif year % 12 == 11:                                                                           
+  animal = "sheep"                                                                              
+                                                                                                
+if animal == " ":                                                                               
+  print("It's an error!")                                                                       
+else:                                                                                           
+  print("The animal of {} is {}.". format(year, animal))                                        
