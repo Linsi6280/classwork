@@ -1,0 +1,28 @@
+# 1
+print("Cost           With tax")
+print("-----------------------")
+for cost in range(10, 51, 5):
+  tax = cost * 1.15
+  print(f"${cost}             ${tax}")
+
+# 2
+subtotal = 0
+for i in range(5):
+  cost = float(input("Enter a cost of item: "))
+  subtotal += cost
+tax_amount = subtotal * 1.15
+total = subtotal + tax_amount
+print(f"Subtotal: {subtotal}")
+print(f"Tax amount: {tax_amount}")
+print(f"Totoal with tax: {total}")
+
+# 3
+total = 0
+while True:
+    user_input = input("Enter a number: ")
+    if user_input == "":
+      break
+    else:
+      total += user_input
+    
+print(total)
