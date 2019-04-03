@@ -1,0 +1,40 @@
+# 104
+my_list = []
+while True:
+  item = int(input())
+  if item == 0:
+    break
+  my_list += [item]
+
+my_list.sort()
+for num in my_list:
+  print(num)
+
+# 105
+numbers = []
+while True:
+  num = int(input())
+  if num == 0:
+    break
+  numbers += [num]
+
+numbers.sort()
+for num in range(len(numbers) - 1, 0, -1):
+  print(numbers[num])
+  
+  # 106
+  data = []
+while True:
+  detail = int(input())
+  if detail == 0:
+    break
+  data += [detail]
+while len(data) < 4:
+  print("It's a error!")
+  break
+data.sort()
+del data[0]
+del data[0]
+del data[-2]
+del data[-1]
+print(data)
