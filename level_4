@@ -1,0 +1,25 @@
+item_list = [int(n) for n in input().split()]
+new_str = ""
+char_map = [".", "*", "-", "_", "@", "^"]
+for num in item_list:
+  new_str += char_map[num]
+print(new_str)
+
+
+item_list = [int(n) for n in input().split()]
+new_str = ""
+for num in item_list:
+  if num == 0:
+    new_str += "."
+  elif num == 1:
+    new_str += "*"
+  elif num == 2:
+    new_str += "-"
+  elif num == 3:
+    new_str += "_"
+  elif num == 4:
+    new_str += "@"
+  elif num == 5:
+    new_str += "^"
+
+print(new_str)
