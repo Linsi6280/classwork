@@ -1,0 +1,18 @@
+# create a loop that will read in 5 integer values into a list.
+numbers = []
+position = 1
+for _ in range(5):
+  num = int(input(f"Enter a number ({position} of 5): "))
+  numbers.append(num)
+  position += 1
+print(numbers)
+
+
+# create a program that will count the number of words that start with the letter "h"
+words = ["hello", "hat", "bat", "shell", "tv", "livingroom", "heavy"]
+count = 0
+for word in words:
+  #if word[0:2] == "he":  
+  if word.startswith("he"): 
+    count += 1
+print(count)
