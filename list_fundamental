@@ -16,3 +16,30 @@ for word in words:
   if word.startswith("he"): 
     count += 1
 print(count)
+
+
+
+word = str(input("Enter a word: "))
+my_list = ["hat", "book", "jacket"]
+
+# if word in my_list:
+#    print("True")
+# else:
+#    print("False")
+
+for i in my_list:
+  if word == i:
+    print("True")
+    break
+else:
+  print("False")
+
+# index = -1
+# a = 0
+# while i < len(my_list):
+#   word = word[i]
+#   if word == i:
+#     index = a
+#     break
+#   i += 1
+# print(msg)
