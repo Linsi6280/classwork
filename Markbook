@@ -1,0 +1,50 @@
+"""
+# Markbook Program
+- Enter/remove/change student names
+- Enter/change student marks, one mark per student, or more if you want.
+- Calculate class average
+- Get list of at-risk students mark <= 65
+- Get top student/mark
+- Print a report of whole class (names and marks)
+"""
+marks = [99, 34, 13, 100, 77, 45, 87]
+marks.append(98)
+students = ["a", "b", "c", "d", "o", "e", "f", "g", "k"]
+del students[4]
+students[7] = "h"
+
+while True:
+    # display menu options
+    print("Markbook")
+    print("1 - Class average")
+    print("2 - At- risk students and highest mark")
+    print("3 - Report")
+    
+    choice = int(input("Menu choice: "))
+    # handle the choices
+
+    if choice == 1:
+        total = 0
+        for mark in marks:
+          total += mark
+        average = total / len(marks)
+        print(f"The class average is {average}")
+        input("Back to menu [Enter]...")
+
+    if choice == 2:
+        print("At-risk students:")
+        maximum = marks[0]
+        for i in range(8):
+          if marks[i] > maximum:
+            maximum = marks[i]
+            student = students[i]
+          if marks[i] <= 65:
+            print(students[i], marks[i])
+        print(f"Student {student} got the highest mark: {maximum}")
+        input("Back to menu [Enter]...")
+
+    if choice == 3:
+        print("The report of the whole class:")
+        for i in range(8):
+          print(f"Student {students[i]} got mark {marks[i]}")
+        input("Back to menu [Enter]...")
