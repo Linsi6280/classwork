@@ -10,6 +10,7 @@ my_list.sort()
 for num in my_list:
   print(num)
 
+
 # 105
 numbers = []
 while True:
@@ -21,7 +22,8 @@ while True:
 numbers.sort()
 for num in range(len(numbers) - 1, 0, -1):
   print(numbers[num])
-  
+
+
   # 106
   data = []
 while True:
@@ -38,3 +40,39 @@ del data[0]
 del data[-2]
 del data[-1]
 print(data)
+
+
+# 107
+words = []
+while True:
+  word = str(input())
+  if word == " ":
+    break
+  if word not in words:
+    words.append(word)
+
+for word in words:
+  print(word)
+  
+  
+ # 108  (something wrong)
+ negative = []
+zero = []
+positive = []
+while True:
+  num = int(input())   
+  if num == "":
+    break
+  if num < 0:
+    negative.append(num)
+  elif num == 0:
+    zero.append(num)
+  else:
+    positive.append(num)
+
+for i in negative:
+  print(i)
+for i in zero:
+  print(i)
+for i in positive:
+  print(i)
