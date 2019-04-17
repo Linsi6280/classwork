@@ -35,14 +35,14 @@ else:
   print("False")
 
 # index = -1
-# a = 0
+# i = 0
 # while i < len(my_list):
-#   word = word[i]
-#   if word == i:
-#     index = a
+#   element = my_list[i]
+#   if word == element:
+#     index = i
 #     break
 #   i += 1
-# print(msg)
+# print(index)
 
 
 
