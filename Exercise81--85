@@ -1,0 +1,23 @@
+# 81
+import math
+a = 3
+b = 4
+def main():
+  c = math.sqrt(a**2 + b**2)
+  print(c)
+
+if __name__ == "__main__":
+  main()
+
+# 82
+distance_in_kilometers = int(input())
+def main():
+  distance = distnace_in_meters()
+  total = 4 + distance / 140 * 0.25
+  print(total)
+
+def distnace_in_meters():
+  return distance * 1000
+
+if __name__ == "__main__":
+  main()
