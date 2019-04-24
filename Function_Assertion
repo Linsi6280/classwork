@@ -1,0 +1,84 @@
+"""
+1. Create a function that takes a number and
+returns that number *2
+2. Create a function that takes a name and
+returns a string saying "Hello, {name}!".
+3. Create a function that takes a list
+and returns a new list of only the non 
+negative numbers.
+4. Create a function that takes a list of
+words and returns a new list of only the
+words that start with the letter 'a' (or 'A').
+"""
+
+def main():
+  num = int(input("Times two: "))
+  double = times_two(num)
+  print(double)
+  
+  name = input("Enter your name: ")
+  welcome = say_hello(name)
+  print(welcome)
+  
+  numbers = []
+  for _ in range(3):
+    num = int(input("Enter numbers: "))
+    numbers.append(num)
+  new_list = filter_negatives(numbers)
+  print(new_list)
+  
+  words = []
+  for _ in range(3):
+    word = input("Enter words: ")
+    words.append(word)
+  a_words = filter_a(words)
+  print(a_words)
+
+def times_two(a):
+  return a * 2
+
+
+def say_hello(b):
+  return f"Hello, {b}!"
+
+
+def filter_negatives(numbers):
+  new_list = []
+  for num in numbers:
+    if num >= 0:
+      new_list.append(num)
+  return new_list
+
+
+def filter_a(words):
+  a_words = []
+  for word in words:
+    #if word.lower().startswith("a"):
+    if word[0] == "A" or word[0] == "a":
+      a_words.append(word)
+  return a_words
+
+
+def tests():
+    # 1
+    assert times_two(4) == 8
+    assert times_two(0) == 0
+    
+    # 2
+    assert say_hello("Bob") == "Hello, Bob!"
+    assert say_hello("blah") == "Hello, blah!"
+
+    # 3
+    assert filter_negatives([]) == []
+    assert filter_negatives([-1, 0, 4]) == [0, 4]
+
+    # 4
+    assert filter_a(['a', 'aa', 'b']) == ['a', 'aa']
+    
+    print("all tests passed!")
+
+
+
+if __name__ == "__main__":
+  tests()
+  main() 
