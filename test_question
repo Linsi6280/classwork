@@ -1,0 +1,26 @@
+def main():
+  numbers = []
+  while True:
+    try:
+      num = int(input("Enter a number: "))
+    except ValueError:
+      break
+
+    numbers.append(num)
+  largest = highest(numbers)
+  print(largest)
+
+def highest(my_list):
+  highest = my_list[0]
+  for i in my_list:
+    if i > highest:
+      highest = i
+  return highest
+
+def tests():
+  assert highest([12, 34, 2, 45, 67, 44]) == 67
+  print("All tests passed!")
+
+if __name__ == "__main__":
+  tests()
+  main()
