@@ -2,23 +2,26 @@ def main():
   numbers = []
   while True:
     try:
-      num = int(input("Enter a number: "))
+      num = int(input("Enter numbers (Press anything else that is not an integer to break): "))
     except ValueError:
       break
-
+  
     numbers.append(num)
-  largest = highest(numbers)
-  print(largest)
+  print(numbers)
+  
+  highest = get_highest(numbers)
+  print(f"The highest number in this list is {highest}.")
 
-def highest(my_list):
-  highest = my_list[0]
-  for i in my_list:
-    if i > highest:
-      highest = i
-  return highest
+def get_highest(numbers):
+  num_highest = numbers[0]
+  for num in numbers:
+    if num > num_highest:
+      num_highest = num
+  return num_highest
 
 def tests():
-  assert highest([12, 34, 2, 45, 67, 44]) == 67
+  assert get_highest([1, 4, 3, 34, 325, 8]) == 325
+  assert get_highest([45, 2, 56, 5]) == 56
   print("All tests passed!")
 
 if __name__ == "__main__":
