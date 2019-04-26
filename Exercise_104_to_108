@@ -56,13 +56,15 @@ for word in words:
   
   
  # 108  (something wrong)
- negative = []
+negative = []
 zero = []
 positive = []
 while True:
-  num = int(input())   
-  if num == "":
+  try:
+    num = int(input("enter: "))   
+  except ValueError:
     break
+
   if num < 0:
     negative.append(num)
   elif num == 0:
